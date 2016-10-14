@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <title>CheckMateISP</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+<body>
+    <h1>CheckMateISP</h1>
+    <h2 id="network_name"></h2>
+    <table>
+        <tr>
+            <td>Average Download</td>
+            <td>Average Upload</td>
+        </tr>
+        <tr>
+            <td id="avgdown"></td>
+            <td id="avgup"></td>
+        </tr>
+    </table>
 
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
+    <table id="table_tests"></table>
+</body>
+<script>
+require('./renderer.js')
+</script>
 </html>

@@ -1,22 +1,27 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "checkmate-isp",
+  "version": "0.0.1",
+  "description": "Let's see how great our ISP (internet service provider) is",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/NascHQ/checkmate-isp",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "isp",
+    "internet",
+    "tool",
+    "quality"
   ],
-  "author": "GitHub",
+  "author": "Jaydson Gomes",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^1.4.1"
+  },
+  "dependencies": {
+    "firebase": "^3.4.1",
+    "speedtest-net": "^1.2.8",
+    "wifi-name": "^3.0.0"
   }
 }
