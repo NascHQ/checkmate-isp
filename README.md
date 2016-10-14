@@ -1,2 +1,6 @@
 # checkmate-isp
-Docs coming soon
+
+```
+npm install
+npm start
+```
