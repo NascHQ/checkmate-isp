@@ -1,13 +1,13 @@
 var speed = require('./speedtest');
 const wifiName = require('wifi-name');
-var user = 'jaydson';
+var remote = require('electron').remote;
 
 wifiName()
 .then(name => {
 	return name;
 })
 .then((wifi_name) => {
-	speed.startLoop( { time: 1000 * 60, network: wifi_name, user: user });
+	speed.startLoop( { time: 1000 * 60, network: wifi_name, user: remote.getGlobal('user') });
 
 	speed.getResults()
 	.then((rows) => {
@@ -27,8 +27,8 @@ wifiName()
 			cells += "<tr><td>"+rows[i].result.date+"</td><td>"+rows[i].result.speeds.download+"</td><td>"+rows[i].result.speeds.upload+"</td><tr>";
 			table.innerHTML = cells;
 		};
-		averageDown = (sumDown / length).toFixed(); 
-		averageUp = (sumUp / length).toFixed(); 
+		averageDown = (sumDown / length).toFixed();
+		averageUp = (sumUp / length).toFixed();
 		document.getElementById('avgdown').innerHTML = averageDown;
 		document.getElementById('avgup').innerHTML = averageUp;
 	});
