@@ -9,8 +9,8 @@ We've just started, but in the future Checkmate ISP should be used as a CLI prog
 
 Checkmate ISP steps:  
 - Get the current connected network  
-- Start the loop
-	Will test the connection speed every minute  
+- Start the loop  
+	- Will test the connection speed every minute  
 - Store data on Firebase  
 - Prints out an table with previous computed results and average download and upload speed
 
