@@ -4,7 +4,7 @@ var user = 'jaydson';
 
 wifiName()
 .then(name => {
-	return name;	
+	return name;
 })
 .then((wifi_name) => {
 	speed.startLoop( { time: 1000 * 60, network: wifi_name, user: user });
