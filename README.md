@@ -1,5 +1,5 @@
 # Checkmate ISP
-Checkmate ISP is a tool which aims to measure the internet quality we have for our [ISPs](https://en.wikipedia.org/wiki/Internet_service_provider).  
+Checkmate ISP is a tool which aims to measure the internet quality of our beloved [ISPs](https://en.wikipedia.org/wiki/Internet_service_provider).  
 It was designed specifically to prove that we have a crap internet service in Brazil.  
 You can use it as well if you live in another country.
 
